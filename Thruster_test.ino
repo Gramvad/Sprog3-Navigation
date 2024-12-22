@@ -102,6 +102,8 @@ void setup(void) {
 void loop() {
   
 
+  clearGPS();
+
   //Check if the GPS has a lock, and recieved a message. If there is a new message store in a variable for reading
   while (!GPS.newNMEAreceived()) {
     c = GPS.read();
